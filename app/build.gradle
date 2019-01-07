@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion project.sdk
+
+    defaultConfig {
+        minSdkVersion project.minSdk
+        targetSdkVersion project.sdk
+        versionCode 1
+        versionName "1.0"
+        applicationId "canvastoolbox.florent37.github.com.canvastoolbox"
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+
+dependencies {
+    implementation project(':mylittlecanvas')
+    implementation 'com.android.support:appcompat-v7:'+project.supportVersion
+}
